@@ -1,266 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teacher Portfolio - Ishwori Secondary School</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 8px;
+        }
+        @media (max-width: 768px) {
+            .profile img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
-        <div class="container nav-container">
-            <div class="logo">My Portfolio</div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+        <div class="menu">
+            <div class="hamburger-menu">Menu</div>
+        </div>
+        <div class="profile">
+            <img src="path_to_profile_image.jpg" alt="Dipak's Profile">
+            <span>Dipak</span>
         </div>
     </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Welcome to My Portfolio</h1>
-                <p class="subtitle">Dedicated Teacher | Educator | Bachelor Student</p>
-                <p class="hero-text">Teaching at Ishwori Secondary School with passion for student development</p>
-                <a href="#contact" class="btn btn-primary">Get in Touch</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I am a passionate educator currently working as a teacher at <strong>Ishwori Secondary School</strong>, 
-                        dedicated to providing quality education and fostering a positive learning environment for my students.
-                    </p>
-                    <p>
-                        While pursuing my <strong>Bachelor's degree</strong>, I continue to balance academic excellence with 
-                        professional teaching responsibilities. I believe in making education engaging, interactive, and 
-                        accessible to all students.
-                    </p>
-                    <p>
-                        My teaching philosophy centers on:
-                    </p>
-                    <ul class="about-list">
-                        <li>Student-centered learning approaches</li>
-                        <li>Interactive and practical teaching methods</li>
-                        <li>Creating inclusive classroom environments</li>
-                        <li>Continuous professional development</li>
-                        <li>Building strong teacher-student relationships</li>
-                    </ul>
-                </div>
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <span>📚 Teacher at Ishwori Secondary School</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2>Teaching Experience</h2>
-            <div class="experience-grid">
-                <div class="experience-card">
-                    <h3>Ishwori Secondary School</h3>
-                    <p class="role">Teacher</p>
-                    <p class="duration">Current Position</p>
-                    <ul>
-                        <li>Develop and deliver engaging lesson plans</li>
-                        <li>Conduct classroom assessments and evaluations</li>
-                        <li>Mentor and guide students for academic excellence</li>
-                        <li>Participate in curriculum development activities</li>
-                        <li>Maintain positive relationships with students and parents</li>
-                    </ul>
-                </div>
-
-                <div class="experience-card">
-                    <h3>Key Responsibilities</h3>
-                    <p class="role">Teaching & Administration</p>
-                    <p class="duration">Ongoing</p>
-                    <ul>
-                        <li>Classroom instruction and student evaluation</li>
-                        <li>Educational resource coordination</li>
-                        <li>Co-curricular activities organization</li>
-                        <li>Parent-teacher cooperation</li>
-                        <li>Records and report maintenance</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education-grid">
-                <div class="education-card">
-                    <h3>Bachelor's Degree</h3>
-                    <p class="institution">Currently Pursuing</p>
-                    <p class="details">Higher education program with focus on academic excellence and personal development</p>
-                </div>
-
-                <div class="education-card">
-                    <h3>Teaching Certification</h3>
-                    <p class="institution">Teacher Training Program</p>
-                    <p class="details">Completion of professional teacher training and certification requirements</p>
-                </div>
-
-                <div class="education-card">
-                    <h3>Continuous Learning</h3>
-                    <p class="institution">Professional Development</p>
-                    <p class="details">Regular participation in workshops, seminars, and training programs related to education</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2>Skills & Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Teaching Skills</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">Curriculum Design</span>
-                        <span class="skill-tag">Lesson Planning</span>
-                        <span class="skill-tag">Classroom Management</span>
-                        <span class="skill-tag">Student Assessment</span>
-                        <span class="skill-tag">Interactive Teaching</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Subject Expertise</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">Subject Knowledge</span>
-                        <span class="skill-tag">Pedagogy</span>
-                        <span class="skill-tag">Educational Technology</span>
-                        <span class="skill-tag">Research Skills</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Soft Skills</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">Communication</span>
-                        <span class="skill-tag">Leadership</span>
-                        <span class="skill-tag">Problem Solving</span>
-                        <span class="skill-tag">Teamwork</span>
-                        <span class="skill-tag">Adaptability</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Technical Skills</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">Microsoft Office</span>
-                        <span class="skill-tag">Google Workspace</span>
-                        <span class="skill-tag">Learning Management Systems</span>
-                        <span class="skill-tag"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section id="achievements" class="achievements">
-        <div class="container">
-            <h2>Achievements & Certifications</h2>
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <h4>🏆 Dedicated Educator</h4>
-                    <p>Award for commitment to student learning and development</p>
-                </div>
-                <div class="achievement-card">
-                    <h4>📜 Teaching Certification</h4>
-                    <p>Professional teaching certification from recognized teacher training program</p>
-                </div>
-                <div class="achievement-card">
-                    <h4>⭐ Student Excellence</h4>
-                    <p>Students achieving excellent academic results under guidance</p>
-                </div>
-                <div class="achievement-card">
-                    <h4>📚 Bachelor's Student</h4>
-                    <p>Currently pursuing bachelor's degree while working as teacher</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <div class="contact-item">
-                        <strong>📧 Email:</strong>
-                        <p>khanaldipak790@gmail.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <strong>📱 Phone:</strong>
-                        <p>+977 9849965886</p>
-                    </div>
-                    <div class="contact-item">
-                        <strong>🏫 Institution:</strong>
-                        <p>Ishwori Secondary School</p>
-                    </div>
-                    <div class="contact-item">
-                        <strong>🌐 Location:</strong>
-                        <p>Nepal</p>
-                    </div>
-                </div>
-
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Teacher Portfolio. All rights reserved.</p>
-            <p>Teaching Excellence | Student Development | Continuous Learning</p>
-        </div>
-    </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
