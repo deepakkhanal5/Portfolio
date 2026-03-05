@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
     <style>
-        .navbar {
+        /* Add styling for the navigation bar */
+        nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
         }
+        /* Add styles for the profile image and name */
         .profile {
             display: flex;
             align-items: center;
-            margin-left: auto;
         }
         .profile img {
-            border-radius: 50%;
             width: 40px;
             height: 40px;
-            margin-right: 8px;
+            border-radius: 50%;
+            margin-right: 10px;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 600px) {
             .profile img {
                 width: 30px;
                 height: 30px;
@@ -31,15 +34,18 @@
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="menu">
-            <div class="hamburger-menu">Menu</div>
-        </div>
+    <nav>
         <div class="profile">
-            <img src="path_to_profile_image.jpg" alt="Dipak's Profile">
-            <span>Dipak</span>
+            <img src="path/to/profile-image.jpg" alt="Profile Image">
+            <span style="color: white;">Dipak</span>
+        </div>
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
         </div>
     </nav>
-    <script src="script.js"></script>
+    <h1>Welcome to my Portfolio</h1>
+    <p>Some content goes here.</p>
 </body>
 </html>
