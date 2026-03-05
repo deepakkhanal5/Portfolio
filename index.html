@@ -1,51 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Portfolio</title>
-    <style>
-        /* Add styling for the navigation bar */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: #333;
-        }
-        /* Add styles for the profile image and name */
-        .profile {
-            display: flex;
-            align-items: center;
-        }
-        .profile img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-        @media (max-width: 600px) {
-            .profile img {
-                width: 30px;
-                height: 30px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <nav>
-        <div class="profile">
-            <img src="path/to/profile-image.jpg" alt="Profile Image">
-            <span style="color: white;">Dipak</span>
-        </div>
-        <div class="links">
-            <a href="#">Home</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
-        </div>
-    </nav>
-    <h1>Welcome to my Portfolio</h1>
-    <p>Some content goes here.</p>
-</body>
-</html>
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li style="float: right;">
+            <img src="/path/to/profile.jpg" alt="Dipak's Profile" style="border-radius: 50%; width: 40px; height: 40px;">
+            <span style="vertical-align: middle;">Dipak</span>
+        </li>
+    </ul>
+</nav>
