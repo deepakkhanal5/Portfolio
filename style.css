@@ -1,37 +1,161 @@
-.portfolio {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.hero {
-    background: url('hero-background.jpg') no-repeat center center;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
 }
 
-.hero h1 {
-    font-size: 3em;
+header {
+  background-color: #2d2d2d;
+  color: #fff;
+  padding: 10px 0;
 }
 
-.profile-image {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border: 3px solid white;
-    margin-top: -75px;
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
 }
 
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2em;
-    }
-    .portfolio {
-        padding: 10px;
-    }
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+/* Home Section */
+.home-section {
+  background-color: #3498db;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.profile-container {
+  display: inline-block;
+  text-align: center;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.home-section h1 {
+  font-size: 2.5em;
+}
+
+.home-section p {
+  font-size: 1.2em;
+}
+
+/* About Section */
+.about-section {
+  background-color: #ecf0f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2em;
+  color: #2c3e50;
+}
+
+.about-section p {
+  font-size: 1.1em;
+  color: #7f8c8d;
+}
+
+/* Experience Section */
+.experience-section {
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+
+.experience-section h2 {
+  font-size: 2em;
+  color: #2c3e50;
+}
+
+.experience-section ul {
+  list-style-type: none;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.experience-section li {
+  font-size: 1.2em;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #f39c12;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2em;
+}
+
+.contact-section form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section form label {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.contact-section form input, 
+.contact-section form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+.contact-section form button {
+  padding: 10px;
+  background-color: #2c3e50;
+  color: #fff;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-section form button:hover {
+  background-color: #34495e;
+}
+
+/* Footer */
+footer {
+  background-color: #2d2d2d;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
 }
