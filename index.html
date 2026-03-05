@@ -1,41 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Teacher Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dipak Khanal's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Teacher Portfolio</h1>
-    </header>
-    <main>
-        <section class="profile">
-            <h2>Profile Picture</h2>
-            <img src="profile_picture.jpg" alt="Profile Picture" style="float:right; width:150px; height:auto;">
-            <h3>About Me</h3>
-            <p>I am a passionate educator with a strong commitment to fostering a positive learning environment.</p>
-        </section>
-        <section class="credentials">
-            <h2>Teaching Credentials</h2>
-            <ul>
-                <li>Bachelor's Degree in Education</li>
-                <li>Master's Degree in Educational Leadership</li>
-                <li>Certified Teacher in Mathematics and Science</li>
-            </ul>
-        </section>
-        <section class="achievements">
-            <h2>Achievements</h2>
-            <ul>
-                <li>Awarded Teacher of the Year 2025</li>
-                <li>Successfully implemented a new curriculum that increased student engagement by 30%</li>
-                <li>Chaired the Local Education Committee for 2 years</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Deepak Khanal</p>
-    </footer>
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="profile-container">
+      <img src="profile.jpg" alt="Dipak Khanal" class="profile-pic">
+      <h1>Dipak Khanal</h1>
+      <p>Teacher at Ishwori Secondary School | Bachelor's Student</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <p>I am a passionate teacher with a year of experience at Ishwori Secondary School. Currently pursuing my Bachelor's in Education. I am committed to helping students grow and excel in their studies.</p>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience-section">
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>Teacher</strong> - Ishwori Secondary School (2022 - Present)</li>
+      <li>Subject: English, Mathematics, Social Studies</li>
+      <li>Focused on creating an engaging learning environment for students.</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Dipak Khanal. All Rights Reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
