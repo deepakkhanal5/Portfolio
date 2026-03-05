@@ -1,12 +1,57 @@
-<nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li style="float: right;">
-            <img src="/path/to/profile.jpg" alt="Dipak's Profile" style="border-radius: 50%; width: 40px; height: 40px;">
-            <span style="vertical-align: middle;">Dipak</span>
-        </li>
-    </ul>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>John Doe</h1>
+        <p>Professional Teacher Portfolio</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>A dedicated teacher with over 10 years of experience in various educational environments. Passionate about fostering learning and supporting students in achieving their potential.</p>
+    </section>
+    <section id="portfolio">
+        <h2>My Work</h2>
+        <div class="project">
+            <h3>Project Title 1</h3>
+            <p>Description of the project and what was learned.</p>
+        </div>
+        <div class="project">
+            <h3>Project Title 2</h3>
+            <p>Description of the project and what was learned.</p>
+        </div>
+        <div class="project">
+            <h3>Project Title 3</h3>
+            <p>Description of the project and what was learned.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2026 John Doe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
